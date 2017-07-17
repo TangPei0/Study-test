@@ -10,10 +10,25 @@ import UIKit
 
 class ThreadViewController: UIViewController {
 
+    var thread1: Thread?
+    var thread2: Thread?
+    
+    var count: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        for i in 0..<3{
+            let btn = UIButton(frame: CGRect(x: 40, y: 40+100*i, width: 200, height: 40))
+            btn.setTitle("线程\(i+1)启动", for: .normal)
+            btn.backgroundColor = UIColor.red
+            btn.titleLabel?.textColor = UIColor.black
+            btn.tag = i+1
+            btn.addTarget(self, action: #selector(btnPress(_ :)), for: .touchUpInside)
+            view.addSubview(btn)
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +36,42 @@ class ThreadViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func btnPress(_ sender: UIButton){
+        if sender.tag == 1{
+            print("线程1启动")
+            
+            let thread = Thread.init(target: self, selector: #selector(thread1Act), object: nil)
+            thread.start()
+            
+        }else if sender.tag == 2{
+            print("线程2启动")
+            
+            thread1 = Thread.init(block: {
+                self.thread2Act()
+            })
+            thread1?.start()
+            
+        }else{
+            print("线程3启动")
+            
+            
+        }
     }
-    */
-
-}
+    func thread1Act(){
+        
+        for i in 0..<1000{
+            count = i
+            print("线程1: \(count)")
+        }
+        print("线程1输出结束,count值为\(count)")
+    }
+    
+    func thread2Act(){
+        for i in 0..<1000{
+            count = i
+            print("线程2: \(count)")
+        }
+        print("线程2输出结束,count值为\(count)")
+    }
+    
+   }

@@ -10,10 +10,22 @@ import UIKit
 
 class OperationViewController: UIViewController {
 
+    var operationQueue : OperationQueue!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        operationQueue = OperationQueue.init()
+        operationQueue.maxConcurrentOperationCount = 5
+        let oper = TestOperation()
+        operationQueue.addOperation(oper)
+        operationQueue.addOperation { 
+            for i in 0..<2{
+                print(i)
+            }
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +34,10 @@ class OperationViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+class TestOperation : Operation{
+    override func main() {
+        print("Operation test!")
     }
-    */
-
 }

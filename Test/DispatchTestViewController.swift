@@ -22,6 +22,11 @@ class DispatchTestViewController: UIViewController {
         btn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         view.addSubview(btn)
         
+        let nextbtn = UIButton(frame: CGRect(x: 220, y: 200, width: 100, height: 50))
+        nextbtn.backgroundColor = UIColor.red
+        nextbtn.addTarget(self, action: #selector(nextPage), for: .touchUpInside)
+        view.addSubview(nextbtn)
+        
         //dpTest()
         //djdpTest()
         
@@ -39,6 +44,11 @@ class DispatchTestViewController: UIViewController {
     
     func goBack(){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func nextPage(){
+        let avc = AnimtViewController()
+        self.present(avc, animated: true, completion: nil)
     }
 
     //串行.并行.主线程
@@ -161,5 +171,6 @@ class DispatchTestViewController: UIViewController {
             print("workItem完成通知: ", num)
         }
     }
+    
     
 }

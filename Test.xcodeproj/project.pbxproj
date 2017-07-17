@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F26EEA381F1C662D00CC7D97 /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26EEA371F1C662D00CC7D97 /* ThreadViewController.swift */; };
+		F26EEA3A1F1C719F00CC7D97 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26EEA391F1C719F00CC7D97 /* OperationViewController.swift */; };
+		F26EEA571F1C74A900CC7D97 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26EEA561F1C74A900CC7D97 /* QuartzCore.framework */; };
+		F26EEA591F1C74B300CC7D97 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26EEA581F1C74B300CC7D97 /* OpenGLES.framework */; };
+		F26EEA761F1C848E00CC7D97 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26EEA751F1C848E00CC7D97 /* LocationViewController.swift */; };
 		F2711A2A1F17691000D918D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2711A291F17691000D918D9 /* FirstViewController.swift */; };
 		F2711A2C1F17692100D918D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2711A2B1F17692100D918D9 /* SecondViewController.swift */; };
 		F2866B5C1F186EF50012FEC5 /* DispatchTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2866B5B1F186EF50012FEC5 /* DispatchTestViewController.swift */; };
+		F2866BBB1F18D25A0012FEC5 /* AnimtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2866BBA1F18D25A0012FEC5 /* AnimtViewController.swift */; };
 		F2CE29391F171E0C00C28BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE29381F171E0C00C28BB3 /* AppDelegate.swift */; };
 		F2CE293E1F171E0C00C28BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CE293C1F171E0C00C28BB3 /* Main.storyboard */; };
 		F2CE29401F171E0C00C28BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CE293F1F171E0C00C28BB3 /* Assets.xcassets */; };
@@ -36,9 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F26EEA371F1C662D00CC7D97 /* ThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
+		F26EEA391F1C719F00CC7D97 /* OperationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
+		F26EEA561F1C74A900CC7D97 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F26EEA581F1C74B300CC7D97 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F26EEA741F1C757600CC7D97 /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
+		F26EEA751F1C848E00CC7D97 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		F2711A291F17691000D918D9 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F2711A2B1F17692100D918D9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F2866B5B1F186EF50012FEC5 /* DispatchTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTestViewController.swift; sourceTree = "<group>"; };
+		F2866BBA1F18D25A0012FEC5 /* AnimtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimtViewController.swift; sourceTree = "<group>"; };
 		F2CE29351F171E0C00C28BB3 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CE29381F171E0C00C28BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2CE293D1F171E0C00C28BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26EEA591F1C74B300CC7D97 /* OpenGLES.framework in Frameworks */,
+				F26EEA571F1C74A900CC7D97 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +93,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F26EEA3B1F1C73BE00CC7D97 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		F26EEA551F1C74A900CC7D97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F26EEA581F1C74B300CC7D97 /* OpenGLES.framework */,
+				F26EEA561F1C74A900CC7D97 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2CE292C1F171E0C00C28BB3 = {
 			isa = PBXGroup;
 			children = (
+				F26EEA3B1F1C73BE00CC7D97 /* Foundation */,
 				F2CE29371F171E0C00C28BB3 /* Test */,
 				F2CE294C1F171E0C00C28BB3 /* TestTests */,
 				F2CE29571F171E0C00C28BB3 /* TestUITests */,
 				F2CE29361F171E0C00C28BB3 /* Products */,
+				F26EEA551F1C74A900CC7D97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +142,11 @@
 				F2711A291F17691000D918D9 /* FirstViewController.swift */,
 				F2711A2B1F17692100D918D9 /* SecondViewController.swift */,
 				F2866B5B1F186EF50012FEC5 /* DispatchTestViewController.swift */,
+				F2866BBA1F18D25A0012FEC5 /* AnimtViewController.swift */,
+				F26EEA371F1C662D00CC7D97 /* ThreadViewController.swift */,
+				F26EEA391F1C719F00CC7D97 /* OperationViewController.swift */,
+				F26EEA741F1C757600CC7D97 /* Test-Bridging-Header.h */,
+				F26EEA751F1C848E00CC7D97 /* LocationViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -267,8 +305,12 @@
 			files = (
 				F2866B5C1F186EF50012FEC5 /* DispatchTestViewController.swift in Sources */,
 				F2711A2C1F17692100D918D9 /* SecondViewController.swift in Sources */,
+				F26EEA381F1C662D00CC7D97 /* ThreadViewController.swift in Sources */,
 				F2CE29391F171E0C00C28BB3 /* AppDelegate.swift in Sources */,
+				F2866BBB1F18D25A0012FEC5 /* AnimtViewController.swift in Sources */,
 				F2711A2A1F17691000D918D9 /* FirstViewController.swift in Sources */,
+				F26EEA3A1F1C719F00CC7D97 /* OperationViewController.swift in Sources */,
+				F26EEA761F1C848E00CC7D97 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

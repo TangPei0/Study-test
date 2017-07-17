@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = FirstViewController()
+        //window?.rootViewController = FirstViewController()
+        window?.rootViewController = LocationViewController()
         window?.makeKeyAndVisible()
         
         return true

@@ -6,8 +6,3 @@
 //  Copyright © 2017年 唐培. All rights reserved.
 //
 
-#ifndef Test_Bridging_Header_h
-#define Test_Bridging_Header_h
-
-
-#endif /* Test_Bridging_Header_h */
