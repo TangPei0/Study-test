@@ -43,7 +43,7 @@ class LocationViewController: UIViewController , CLLocationManagerDelegate{
 
     //CoreLocationManagerDelegate 中获取到位置信息的处理函数
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location : CLLocation = locations[locations.count-1] as CLLocation
+        let location : CLLocation = locations.last! as CLLocation// locations[locations.count-1] as CLLocation
         
         //当前位置
         currLocation = location
@@ -59,9 +59,15 @@ class LocationViewController: UIViewController , CLLocationManagerDelegate{
         ///使用坐标，获取地址
         let geocoder = CLGeocoder()
         var place: CLPlacemark?
-//        geocoder.reverseGeocodeLocation(currLocation) { (placemarks, error) in
-//            
-//        }
+        geocoder.reverseGeocodeLocation(currLocation) { (placemarks, error) in
+            if error != nil{
+                print("错误：\(error!.localizedDescription)")
+                return
+            }
+            
+            
+            
+        }
         
     }
     

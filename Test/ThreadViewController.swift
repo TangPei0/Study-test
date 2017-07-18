@@ -47,31 +47,33 @@ class ThreadViewController: UIViewController {
             print("线程2启动")
             
             thread1 = Thread.init(block: {
-                self.thread2Act()
+                for i in 0..<5{
+                    print("线程2: \(i)")
+                }
             })
             thread1?.start()
             
         }else{
             print("线程3启动")
             
-            
+            Thread.detachNewThreadSelector(#selector(thread2Act), toTarget: self, with: nil)
         }
     }
     func thread1Act(){
         
-        for i in 0..<1000{
+        for i in 0..<20{
             count = i
-            print("线程1: \(count)")
+            print("线程1: \(count!)")
         }
-        print("线程1输出结束,count值为\(count)")
+        print("线程1输出结束,count值为\(count!)")
     }
     
     func thread2Act(){
-        for i in 0..<1000{
+        for i in 20..<30{
             count = i
-            print("线程2: \(count)")
+            print("线程3: \(count!)")
         }
-        print("线程2输出结束,count值为\(count)")
+        print("线程3输出结束,count值为\(count!)")
     }
     
    }
