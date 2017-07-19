@@ -28,6 +28,7 @@ class SecondViewController: UIViewController {
     
     var i : Int! = 0
     
+    var userDefault : UserDefaults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,8 @@ class SecondViewController: UIViewController {
             view.addSubview(btn)
         }
         
+        userDefault = UserDefaults.standard
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,7 +69,7 @@ class SecondViewController: UIViewController {
     func rbtnClick(){
         //self.delegate?.changeColor(tempColor: UIColor.yellow)
         //self.block!(UIColor.yellow)
-        self.bgdelegate?.changeBG(bgimg: UIImage(named: "bg\(i+1)")!)
+        self.bgdelegate?.changeBG(bgimg: UIImage(named: "bg\(userDefault.integer(forKey: "bg")+1)")!)
         self.bgBlock!(UIImage(named: "bg\(i+1)")!)
         self.dismiss(animated: true, completion: nil)
     }
@@ -88,5 +91,9 @@ class SecondViewController: UIViewController {
             i = sender.tag
         }
         
+        userDefault.set(i, forKey: "bg")
+        print(userDefault.integer(forKey: "bg"))
     }
+    
+    
 }

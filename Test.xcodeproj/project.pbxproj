@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F25DDDB71F1F1792005BECA9 /* UserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DDDB61F1F1792005BECA9 /* UserDefaultViewController.swift */; };
+		F25DDDFE1F1F6E76005BECA9 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DDDFD1F1F6E76005BECA9 /* RefreshViewController.swift */; };
 		F260680E1F1DB88700CBC953 /* AutoLUTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260680C1F1DB88700CBC953 /* AutoLUTViewController.swift */; };
 		F26EEA381F1C662D00CC7D97 /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26EEA371F1C662D00CC7D97 /* ThreadViewController.swift */; };
 		F26EEA3A1F1C719F00CC7D97 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26EEA391F1C719F00CC7D97 /* OperationViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F25DDDB61F1F1792005BECA9 /* UserDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultViewController.swift; sourceTree = "<group>"; };
+		F25DDDFD1F1F6E76005BECA9 /* RefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		F260680C1F1DB88700CBC953 /* AutoLUTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLUTViewController.swift; sourceTree = "<group>"; };
 		F26EEA371F1C662D00CC7D97 /* ThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
 		F26EEA391F1C719F00CC7D97 /* OperationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				F26EEA741F1C757600CC7D97 /* Test-Bridging-Header.h */,
 				F26EEA751F1C848E00CC7D97 /* LocationViewController.swift */,
 				F260680C1F1DB88700CBC953 /* AutoLUTViewController.swift */,
+				F25DDDB61F1F1792005BECA9 /* UserDefaultViewController.swift */,
+				F25DDDFD1F1F6E76005BECA9 /* RefreshViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -315,6 +321,8 @@
 				F26EEA3A1F1C719F00CC7D97 /* OperationViewController.swift in Sources */,
 				F260680E1F1DB88700CBC953 /* AutoLUTViewController.swift in Sources */,
 				F26EEA761F1C848E00CC7D97 /* LocationViewController.swift in Sources */,
+				F25DDDB71F1F1792005BECA9 /* UserDefaultViewController.swift in Sources */,
+				F25DDDFE1F1F6E76005BECA9 /* RefreshViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

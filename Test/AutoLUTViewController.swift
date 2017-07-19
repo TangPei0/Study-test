@@ -77,7 +77,7 @@ class AutoLUTViewController: UIViewController {
         let day = NSCalendar.current.component(Calendar.Component.day, from: date as Date)
         print(day)
         
-        //年龄
+        //
         func numberOfYearsCountAt(formdate: Date? = Date(), toDate: Date? = Date())->Int{
             
             return 0

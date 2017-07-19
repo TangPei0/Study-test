@@ -16,10 +16,13 @@ class FirstViewController: UIViewController, ChangeBgViewDelegate {
     
     var bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height:  UIScreen.main.bounds.height))
     
+    
+    
     func changeBG(bgimg : UIImage){
-        
+        self.bgView.image = bgimg
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
