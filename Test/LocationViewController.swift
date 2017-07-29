@@ -11,7 +11,8 @@ import CoreLocation
 import MapKit
 
 class LocationViewController: UIViewController , CLLocationManagerDelegate{
-
+    
+    //用于定位服务管理类，它能够给我们提供位置信息和高度信息，也可以监控设备进入或离开某个区域，还可以获得设备的运行方向
     var locationManager: CLLocationManager!
     var currLocation: CLLocation!
     var versionCode : String = UIDevice.current.systemVersion
@@ -65,14 +66,20 @@ class LocationViewController: UIViewController , CLLocationManagerDelegate{
                 return
             }
             
-            
+            let pm = placemarks
+            if (pm?.count)! > 0 {
+                place = placemarks?[0]
+                print(place?.name)
+            }else{
+                print("定位出错")
+            }
             
         }
         
     }
     
-//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-//        print(error)
-//    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
 
 }

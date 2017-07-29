@@ -13,7 +13,7 @@ class FirstViewController: UIViewController, ChangeBgViewDelegate {
 //        //下页传回的颜色
 //        self.view.backgroundColor = tempColor
 //    }
-    
+    let userDefault = UserDefaults.standard
     var bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height:  UIScreen.main.bounds.height))
     
     
@@ -26,12 +26,14 @@ class FirstViewController: UIViewController, ChangeBgViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bgView.image = UIImage(named: "bg\(userDefault.integer(forKey: "bg")+1)")
         view.addSubview(bgView)
         
         let  btn = UIButton(frame: CGRect(x: 120, y: 120, width: 150, height: 50))
         btn.backgroundColor = UIColor.darkGray
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         view.addSubview(btn)
+        
         
         
     }

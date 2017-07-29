@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = RefreshViewController()
+        window?.rootViewController = LocationViewController()
         //window?.rootViewController = ThreadViewController()
         window?.makeKeyAndVisible()
         

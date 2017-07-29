@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F220B9A11F2215E3001444E1 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B9A01F2215E3001444E1 /* DateViewController.swift */; };
 		F25DDDB71F1F1792005BECA9 /* UserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DDDB61F1F1792005BECA9 /* UserDefaultViewController.swift */; };
 		F25DDDFE1F1F6E76005BECA9 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DDDFD1F1F6E76005BECA9 /* RefreshViewController.swift */; };
 		F260680E1F1DB88700CBC953 /* AutoLUTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260680C1F1DB88700CBC953 /* AutoLUTViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F220B9A01F2215E3001444E1 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		F25DDDB61F1F1792005BECA9 /* UserDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultViewController.swift; sourceTree = "<group>"; };
 		F25DDDFD1F1F6E76005BECA9 /* RefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		F260680C1F1DB88700CBC953 /* AutoLUTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLUTViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				F260680C1F1DB88700CBC953 /* AutoLUTViewController.swift */,
 				F25DDDB61F1F1792005BECA9 /* UserDefaultViewController.swift */,
 				F25DDDFD1F1F6E76005BECA9 /* RefreshViewController.swift */,
+				F220B9A01F2215E3001444E1 /* DateViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				F2711A2C1F17692100D918D9 /* SecondViewController.swift in Sources */,
 				F26EEA381F1C662D00CC7D97 /* ThreadViewController.swift in Sources */,
 				F2CE29391F171E0C00C28BB3 /* AppDelegate.swift in Sources */,
+				F220B9A11F2215E3001444E1 /* DateViewController.swift in Sources */,
 				F2866BBB1F18D25A0012FEC5 /* AnimtViewController.swift in Sources */,
 				F2711A2A1F17691000D918D9 /* FirstViewController.swift in Sources */,
 				F26EEA3A1F1C719F00CC7D97 /* OperationViewController.swift in Sources */,
